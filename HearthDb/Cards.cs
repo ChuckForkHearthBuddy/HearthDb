@@ -67,6 +67,14 @@ namespace HearthDb
             return result.ToList();
         }
 
+        public static List<Card> GetFromFuzzyText(string text, Locale lang, bool collectible = true)
+        {
+            var values = (collectible ? Collectible : All).Values;
+            var result = values.Where(x =>
+                x.GetLocText(lang)?.IndexOf(text, StringComparison.InvariantCultureIgnoreCase) >= 0);
+            return result.ToList();
+        }
+
 		public static Card GetFromDbfId(int dbfId, bool collectible = false)
 			=> (collectible ? CollectibleByDbfId : AllByDbfId).TryGetValue(dbfId, out var card) ? card : null;
 
