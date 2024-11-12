@@ -2,13 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyTitle>HearthDb</AssemblyTitle>
+    <AssemblyTitle>Chuck-HearthDb</AssemblyTitle>
     <Company>HearthSim</Company>
-    <Product>HearthDb</Product>
+    <Product>Chuck-HearthDb</Product>
     <Copyright>Copyright © HearthSim 2023</Copyright>
     <AssemblyVersion>31.0.0</AssemblyVersion>
     <FileVersion>31.0.0</FileVersion>
     <LangVersion>8</LangVersion>
+    <Version>31.0.0</Version>
+    <PackageId>Chuck-HearthDb</PackageId>
+    <AssemblyName>Chuck-HearthDb</AssemblyName>
   </PropertyGroup>
 
     <!-- Remove everything from the hsdata repo except for CardDefs.xml. -->
